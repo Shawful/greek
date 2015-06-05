@@ -98,7 +98,7 @@ app.get('/notification',function(req,res){
     
     console.log("message incoming ....");
     
-    io.sockets.emit('news',{ deviceName: 'cRIO1234' }); 
+    io.sockets.emit('news',{ body: 'The hackathon is almost over!' }); 
 
     return res.send("message sent");
 });
